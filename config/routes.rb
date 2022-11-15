@@ -9,6 +9,8 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get "/pay", to: "pay#index"
   post "/pay", to: "pay#show_change"
+  get "/fibonacci", to: "fibonacci#index"
+  post "/fibonacci", to: "fibonacci#generate_items"
 end
 
 # Rails.application.routes.draw do
