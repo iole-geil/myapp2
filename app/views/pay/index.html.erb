@@ -1,0 +1,18 @@
+<h1>Payment Page</h1>
+
+<%= form_with(scope: 'session', url: "/pay", method: "post", data: { turbo: false }) do |f| %>
+  <div>
+    <%= f.label :payment %>
+    <%= f.number_field :payment %><br>
+  </div>
+
+  <div>
+    <%= f.label :due %>
+    <%= f.number_field :due %><br>
+  </div>
+
+  <div>
+    <%= f.submit "Pay" %>
+  </div>
+
+<% end %>
