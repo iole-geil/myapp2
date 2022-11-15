@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started with Ruby on Rails
+This is an example application based on the [Rails Guides](https://guides.rubyonrails.org/getting_started.html#mvc-and-you).
 
-Things you may want to cover:
+### System dependencies
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby
+```
+3.1.1
+```
+Rails
+```
+7.0.4
+```
+Postgresql
+```
+12.12
+```
+WSL 2
+```
+Ubuntu 20.04.1
+```
