@@ -1,0 +1,24 @@
+<h1>Welcome to the Fibonacci Generator!</h1>
+
+<%= form_with(scope: 'session', url: "/fibonacci", method: "post", data: { turbo: false }) do |f| %>
+  <div>
+    <%= f.label :number %><br>
+    <%= f.number_field :number %><br>
+  </div>
+
+  <div>
+    <%= f.submit "Generate!" %>
+  </div>
+
+<% end %>
+
+<br>
+<br>
+<br>
+<h2>Your Fibonacci numbers are:</h2>
+[
+<% @items.each do |item| %>
+  <strong><%= item %></strong>
+  <%= "," if item != @items.last %>
+<% end %>
+]

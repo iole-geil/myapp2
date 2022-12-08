@@ -1,0 +1,11 @@
+<h2>Your change: </h2>
+
+<div>
+  <% @change_breakdown.each do |change| %>
+    <p>
+    Php <%= change %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New Payment", pay_path %>
